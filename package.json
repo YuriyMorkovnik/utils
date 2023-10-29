@@ -8,12 +8,6 @@
   },
   "author": "Yuri Morkovnik",
   "license": "ISC",
-  "devDependencies": {
-    "@types/lodash": "^4.14.197",
-    "typescript": "^5.1.6"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "ramda": "^0.29.0"
-  }
+  "devDependencies": {},
+  "dependencies": {}
 }
