@@ -1,3 +1,6 @@
-import * as R from 'ramda'
+import { mergeDeep } from "./mergeDeep"
 
-export const mergeDeepRightAll = R.reduce(R.mergeDeepRight, {});
+type DeepObject = Record<string, any>
+
+export const mergeDeepRightAll = (objects: DeepObject[]): DeepObject =>
+  objects.reduce((acc, obj) => mergeDeep(acc, obj), {})
